@@ -25,3 +25,4 @@ I<sub>(RN)</sub> &nbsp; and $$V_(RY) = V_(RN) - V_(YN)$$. <br><br>So, the instan
 <br>
 <br>
 <br>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

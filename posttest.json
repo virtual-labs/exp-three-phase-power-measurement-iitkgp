@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The input power to a 3-phase a.c. motor is measured as 5kW. If the voltage and current to the motor are 400V and 8.6A respectively, determine the power factor of the system?",
+      "answers": {
+        "a": "0.839",
+        "b": "0.622",
+        "c": "0.9",
+        "d": "0.784"
+      },
+      "explanations": {
+        "a": "You have chosen correct answer",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen wrong answer",
+        "d": "You have chosen wrong answer"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Two watt meters are connected to measure the input power to a balanced 3-phase load by the two watt meter method. If the instrument readings are 8kW and 4kW, determine the load power factor. ",
+      "answers": {
+        "a": "0.643",
+        "b": "0.939",
+        "c": "0.744",
+        "d": "0.866"
+      },
+      "explanations": {
+        "a": "You have chosen wrong answer",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen wrong answer",
+        "d": "You have chosen correct answer"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The total number of phase sequences in a three phase AC system is ",
+      "answers": {
+        "a": "3",
+        "b": "1",
+        "c": "2",
+        "d": "0"
+      },
+      "explanations": {
+        "a": "You have chosen wrong answer",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen correct answer",
+        "d": "You have chosen wrong answer"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Three loads, each of resistance 30, are connected in star to a 415 V, 3-phase supply. Determine(a) the system phase voltage, (b) the phase current ",
+      "answers": {
+        "a": "300V,8A",
+        "b": "255V,2A",
+        "c": "239.6V,8A",
+        "d": "175V,7A"
+      },
+      "explanations": {
+        "a": "You have chosen wrong answer",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen correct answer",
+        "d": "You have chosen wrong answer"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "By using two watt meter method, power can be measured in",
+      "answers": {
+        "a": "3  phase, 2  wire system",
+        "b": "3  phase, 4  wire system",
+        "c": "3  phase, 3  wire system",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "You have chosen wrong answer",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen correct answer",
+        "d": "You have chosen wrong answer"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The two watt meter method is applicable for",
+      "answers": {
+        "a": "Star connected system only",
+        "b": "Delta connected system only",
+        "c": "Both",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "You have chosen wrong answer",
+        "b": "You have chosen wrong answer",
+        "c": "You have chosen correct answer",
+        "d": "You have chosen wrong answer"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

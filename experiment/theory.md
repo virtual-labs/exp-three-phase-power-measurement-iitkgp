@@ -5,7 +5,7 @@ Fig 1: Connection diagram for three phase power measurement using two wattmeter 
 </div>
 
 <p>&nbsp;</p>
-<p>&nbsp;&nbsp;&nbsp;The connection diagram for the measurement of power in three phase power measurement circuit using two wattmeter's method is shown in figure 1. This is irrespective of the circuit connection star or delta. The circuit may be taken as balanced or unbalanced one, balanced type being only a special case. Please not the connection of two wattmeter's. The current coil of the wattmeter's 1 and 2 in series 
+<p>&nbsp;&nbsp;&nbsp;The connection diagram for the measurement of power in three phase power measurement circuit using two wattmeter's method is shown in figure 1. This is irrespective of the circuit connection star or delta. The circuit may be taken as balanced or unbalanced one, balanced type being only a special case. Please note the connection of two wattmeter's. The current coil of the wattmeter's 1 and 2 in series 
 with R and B phase with the pressure voltage coils being connected across R-Y and B-Y respectively. Y is the third phase in which no current coil is connected.</p>
 <p style="text-align: justify;"><br>&nbsp;&nbsp;&nbsp;If star connected circuit is taken as an example the total instantaneous power consumed in the circuit is,&nbsp;</p><br>
 <p style="text-align: center;"> $$W= I_{RN}*V_{RN} + I_{YN}*V_{YN} + I_{BN}*V_{BN} ...(1)$$</p>

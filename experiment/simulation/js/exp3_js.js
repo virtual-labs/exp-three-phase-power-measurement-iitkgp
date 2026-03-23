@@ -57,12 +57,15 @@ function changeImage1() {
 		var im1= document.getElementById('v');
 		var im2= document.getElementById('f');
 		var im3= document.getElementById('R');
+		var mc1 = document.getElementById('main_ckt1');
 		if (image.src.match("s1")) {
 			image.src = "./images/s2.png"; 
+			mc1.src = "./images/3watt2.jpg";
 			im1.setAttribute('readonly', 'readonly'); im2.setAttribute('readonly', 'readonly'); im3.setAttribute('readonly', 'readonly');
 			execute_ckt1();
 		} else {
 			image.src = "./images/s1.png"; 
+			mc1.src = "./images/3watt.jpg";
 			im1.removeAttribute('readonly'); im2.removeAttribute('readonly'); im3.removeAttribute('readonly');
 			document.f1.W1.value = 0; document.f1.W2.value = 0; document.f1.V1.value = 0;
 			document.f1.A1.value = 0; document.f1.A3.value = 0;
@@ -120,7 +123,7 @@ function simulate_rc1() {
 function change_led1() 
 {
 	var fuse = document.getElementById('led1');
-	fuse.src = "./images/led_on.png"; 
+	fuse.src = "./images/led_on.png";
 	document.f1.R.value = 25;
 }
 	

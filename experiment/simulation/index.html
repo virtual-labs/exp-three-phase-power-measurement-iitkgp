@@ -10,6 +10,18 @@
 <script class="include" type="text/javascript" src="./jquery_files/jqplot.meterGaugeRenderer.min.js"></script>
 <script src="./pop_up/pop_up.js"></script>
 <link rel="stylesheet" type="text/css" href="./pop_up/pop_up.css">
+
+<style>
+@media print {
+  @page {
+    size: B4 portrait; 
+    margin: 0cm; 
+  }
+  body {
+    width: 16cm;
+  }
+
+</style>
 </head>
 
 <body background="./images/pg_bg.gif"> 
@@ -37,17 +49,17 @@
 			<div id="description" style="background-color:#99CCFF; border-radius:10px; border:2px solid #8AC007; position:absolute; align:left; left:10px; top:10px; width:320px;">
 				<h3>&nbsp <u>Procedure:</u> </h3>
 				 <ol type="1">
-					  <li>1. Set the 3Phase (Line to Line) voltage 100 V at frequency = 50Hz.</li><br>
-					  <li>2. Set the balanced load value.</li><br><br>
-					  <li>3. Switch on the supply to get the meter readings and click on "Fill the Table" button to update the observation table.</li><br><br>
-					  <li>4. Compare calculated power (W<sub>C</sub>) with the measured power (W<sub>M</sub>) for each observation.</li>	 <br><br>
-					  <li>5. Then change the balanced load value to take another observation.</li><br>
+					  <li> Set the 3Phase (Line to Line) voltage 100 V at frequency = 50Hz.</li><br>
+					  <li> Set the balanced load value.</li><br><br>
+					  <li> Switch on the supply to get the meter readings and click on "Fill the Table" button to update the observation table.</li><br><br>
+					  <li> Compare calculated power (W<sub>C</sub>) with the measured power (W<sub>M</sub>) for each observation.</li>	 <br><br>
+					  <li> Then change the balanced load value to take another observation.</li><br>
 					  <b>N.B.: Click on the fuse indicator to repair it, if it got fused.</b>
 				</ol> 
 			</div>
 			<div id="ckt_values1" style="position:relative; border: 2px solid #8AC007; border-radius: 10px; left:340px; top:10px; height:400px; width:794px">
 				<p>
-				<img src="./images/3watt.jpg" alt="Tutorials Point" style="position:absolute; border-radius: 10px; top:0px;  right:0px; height:400px; width:794px"/>
+				<img id="main_ckt1" src="./images/3watt.jpg" alt="Tutorials Point" style="position:absolute; border-radius: 10px; top:0px;  right:0px; height:400px; width:794px"/>
 				<img id="myImage" onclick="changeImage1()" src="./images/s1.png" style="cursor: pointer; position:absolute; height:50px; width:50px; bottom:350px; left:8px"/>
 				<img id="led1" onclick="change_led1()" src="./images/led_on.png" style=" background-color:transparent; position:absolute; height:35px; width:35px; top:28px; right:567px"/>
 	
@@ -93,11 +105,11 @@
 					<div id="chart5" class="plot" style="background-color:transparent; width:185px; height:110px;"></div>
 					<script src="./jquery_files/js_metergauge5.js"></script>
 				</div>
-				<div class="example-content" style="position:absolute; top:295px;  right:302px;">
+				<!-- <div class="example-content" style="position:absolute; top:295px;  right:302px;">
 					<link rel="stylesheet" type="text/css" href="./jquery_files/css_metergauge.css">
 					<div id="chart6" class="plot" style="background-color:transparent; width:185px; height:110px;"></div>
 					<script src="./jquery_files/js_metergauge6.js"></script>
-				</div>
+				</div> -->
 				<p style="text-align:center; font-size:25px; position:absolute; width:100px; right:484px; top:100px">V</p>
 
 			</div>
@@ -191,11 +203,11 @@
 			<div id="description" style="background-color:#99CCFF; border-radius:10px; border:2px solid #8AC007; position:absolute; align:left; left:10px; top:10px; width:320px;">
 				<h3>&nbsp <u>Procedure:</u> </h3>
 				 <ol type="1">
-					  <li>1. Set the 3Phase (Line to Line) voltage to 100 V at frequency =50Hz.</li>
-					  <br><li>2. Set different values for R<sub>1</sub>, R<sub>2</sub> and R<sub>3</sub>.</li>
-					  <br><li>3. Switch on the supply to get the meter readings and click on "Fill the Table" button to update the observation table.</li>
-					   <br><li>4. Compare calculated power (W<sub>C</sub>) with the measured power (W<sub>M</sub>) for each observation.</li>
-					  <br><li>5. Change the values of R<sub>1</sub>, R<sub>2</sub> and R<sub>3</sub> to take another observation. </li><br>
+					  <li> Set the 3Phase (Line to Line) voltage to 100 V at frequency =50Hz.</li>
+					  <br><li> Set different values for R<sub>1</sub>, R<sub>2</sub> and R<sub>3</sub>.</li>
+					  <br><li> Switch on the supply to get the meter readings and click on "Fill the Table" button to update the observation table.</li>
+					   <br><li> Compare calculated power (W<sub>C</sub>) with the measured power (W<sub>M</sub>) for each observation.</li>
+					  <br><li> Change the values of R<sub>1</sub>, R<sub>2</sub> and R<sub>3</sub> to take another observation. </li><br>
 					  <b>N.B.: Click on the fuse indicator to repair it, if it got fused.</b>
 				</ol> 
 			</div>
@@ -230,13 +242,13 @@
 				<input type="number" name="V23" value="" id="V23" style="background-color:#E3DE84; text-align:center; position:absolute; top:225px;  right:147px; width:70px" readonly="readonly">
 				</p>
 				
-				<!-- 
-				<div class="example-content" style="position:relative; top:75px;  right:442px;">
+				<!-----EDITED CONTENT-------------------
+				<div class="example-content" style="position:absolute; top:75px;  right:442px;">
 					<link rel="stylesheet" type="text/css" href="./jquery_files/css_metergauge.css">
-					<div id="chart11" class="plot" style="background-color:transparent; width:185px; height:110px;"></div>
-					<script src="./jquery_files/js_metergauge11.js"></script>
+					<div id="chart6" class="plot" style="background-color:transparent; width:185px; height:110px;"></div>
+					<script src="./jquery_files/js_metergauge6.js"></script>
 				</div>
-				<div class="example-content" style="position:absolute; top:295px;  right:372px;">
+				<!-- <div class="example-content" style="position:absolute; top:295px;  right:372px;">
 					<link rel="stylesheet" type="text/css" href="./jquery_files/css_metergauge.css">
 					<div id="chart2" class="plot" style="background-color:transparent; width:185px; height:110px;"></div>
 					<script src="./jquery_files/js_metergauge2.js"></script>
@@ -253,8 +265,8 @@
 				</div>
 				<div class="example-content" style="position:absolute; top:295px;  right:202px;">
 					<link rel="stylesheet" type="text/css" href="./jquery_files/css_metergauge.css">
-					<div id="chart15" class="plot" style="background-color:transparent; width:185px; height:110px;"></div>
-					<script src="./jquery_files/js_metergauge15.js"></script>
+					<div id="chart5" class="plot" style="background-color:transparent; width:185px; height:110px;"></div>
+					<script src="./jquery_files/js_metergauge5.js"></script>
 				</div> -->
 			</div>
 			
@@ -336,6 +348,9 @@
 </ul>
 </div>
 </form>
+<div align="center" style="position:absolute; top:806px; width:1160px">
+<button onclick="window.print()" style="cursor:pointer; text-align:center;font-size: 20px; height:40px; width:500px">Click here to print</button>
+</div>
 </div>
 </body>
 </html>

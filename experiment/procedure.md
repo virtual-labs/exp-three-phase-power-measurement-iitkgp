@@ -12,6 +12,7 @@
 								<li>Close switch S<sub>1</sub>.</li>
 								<li>Read the meters to obtain V<sub>L</sub>, I<sub>1</sub>, I<sub>2</sub> and I<sub>3</sub>. Note the wattmeter reading W<sub>1</sub> and W<sub>2</sub>`(Note the multiplying factor on the wattmeter).</li>
 								<li>Vary the load resistance and obtain at least five sets of observations, the current should not exceed the limit (4.1 A).</li>
+								</ol>
 							<br>
 							&nbsp;
 							<p style="text-align:left;"><strong>UNBALANCED LOAD :</strong></p>

@@ -145,13 +145,13 @@ function changeImage2() {
 		
 		if (image1.src.match("s1")) {
 			image1.src = "./images/s3.png";
-                        mc.src = "./images/4watt2.jpg";			
+                        mc.src = "./images/4watt2U.jpg";			
 			im1.setAttribute('readonly', 'readonly'); im2.setAttribute('readonly', 'readonly'); im3.setAttribute('readonly', 'readonly');
 			im4.setAttribute('readonly', 'readonly'); im5.setAttribute('readonly', 'readonly'); im6.setAttribute('readonly', 'readonly');im7.setAttribute('readonly', 'readonly');
 			execute_ckt2();
 		} else {
 			image1.src = "./images/s1.png"; 
-			mc.src = "./images/4watt.jpg";
+			mc.src = "./images/4wattU.jpg";
 			im1.removeAttribute('readonly'); im2.removeAttribute('readonly'); im3.removeAttribute('readonly');
 			im4.removeAttribute('readonly'); im5.removeAttribute('readonly'); im6.removeAttribute('readonly');im7.removeAttribute('readonly');
 			document.f1.V11.value= 0;

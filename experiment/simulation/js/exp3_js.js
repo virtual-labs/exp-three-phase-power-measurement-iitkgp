@@ -60,12 +60,12 @@ function changeImage1() {
 		var mc1 = document.getElementById('main_ckt1');
 		if (image.src.match("s1")) {
 			image.src = "./images/s2.png"; 
-			mc1.src = "./images/3watt2.jpg";
+			mc1.src = "./images/3watt2U.jpg";
 			im1.setAttribute('readonly', 'readonly'); im2.setAttribute('readonly', 'readonly'); im3.setAttribute('readonly', 'readonly');
 			execute_ckt1();
 		} else {
 			image.src = "./images/s1.png"; 
-			mc1.src = "./images/3watt.jpg";
+			mc1.src = "./images/3wattU.jpg";
 			im1.removeAttribute('readonly'); im2.removeAttribute('readonly'); im3.removeAttribute('readonly');
 			document.f1.W1.value = 0; document.f1.W2.value = 0; document.f1.V1.value = 0;
 			document.f1.A1.value = 0; document.f1.A3.value = 0;
